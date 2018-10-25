@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="tw.edu.ctu.ee.theiotproject.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal|center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btLogin"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.00"
+            android:adjustViewBounds="false"
+            android:background="@mipmap/blank"
+            android:elevation="0dp"
+            app:srcCompat="@mipmap/login" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="54dp"
+            android:layout_weight="0.13" />
+
+        <ImageButton
+            android:id="@+id/btdisplay"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:background="@mipmap/blank"
+            android:elevation="5dp"
+            android:onClick="connectToServer"
+            app:srcCompat="@mipmap/workinfo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="186dp"
+        android:gravity="center_horizontal|center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btmap"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_weight="0.13"
+            android:background="@mipmap/blank"
+            android:elevation="5dp"
+            android:onClick="btmap_onClick"
+            app:srcCompat="@mipmap/map" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="54dp"
+            android:layout_weight="0.02" />
+
+        <ImageButton
+            android:id="@+id/btBrowser"
+            android:layout_width="40dp"
+            android:layout_height="150dp"
+            android:layout_weight="0.13"
+            android:background="@mipmap/blank"
+            android:elevation="5dp"
+            android:onClick="btBrowser_Click"
+            app:srcCompat="@mipmap/display" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="65dp" />
+
+    <TextView
+        android:id="@+id/mapPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/blank"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系統狀態:"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未登入"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="0.57" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="施工地點:"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvpos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="未選擇"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>

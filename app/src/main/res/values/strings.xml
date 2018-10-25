@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">雲端工程管理系統</string>
+    <string name="unLogin">未登入</string>
+    <string name="Loingsus">已登入</string>
+    <string name="mapUnchooese">未選擇</string>
+    <string name="mapChooese">已選擇</string>
+</resources>
